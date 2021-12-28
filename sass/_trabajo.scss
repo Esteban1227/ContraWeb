@@ -1,0 +1,30 @@
+.contenedorTrabajo{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background: black;
+    color: white;
+    &__bloque{
+        padding: 50px 40px;
+        display: flex;
+        align-items: center;
+        border-top: solid 1px gray;
+        &:hover{
+            background: $colorBackground;
+        }
+    }
+    &__texto{
+        padding: 10px;
+    }
+    img{
+        width: 200px;
+        height: 200px;
+        border-radius: 10px;
+    }
+    p{
+        padding-left: 50px;
+        font-size: 20px;
+        line-height: 30px;
+    }
+}

@@ -1,0 +1,94 @@
+.index{
+    display: flex;
+    flex-direction: column;
+    background: $colorBackground2;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    &__img{
+        user-select: none;
+        width: 400px;
+    }
+}
+.contenedorP{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__texto{
+        user-select: none;
+        margin-top: 50px;
+        text-align: center;
+        color: $colorLetraBlanca;
+        font-size: 40px;
+    }
+    &__contenidoSelector{
+	    position: relative;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+    i{
+    position: absolute;
+	right: 20px;
+	top: calc(50% - 10px);
+	width: 10px;
+	height: 10px;
+	display: block;
+	border-left:4px solid rgb(0, 112, 255);
+	border-bottom:4px solid rgb(0, 112, 255);
+	transform: rotate(-45deg); /* Giramos el cuadrado */
+	transition: all 0.25s ease;
+    cursor: pointer;
+    }
+    &__selector{
+        font-size: 18px;
+	    cursor: pointer;
+  	    padding: 7px 53px 7px 10px;
+  	    height: 42px;
+  	    outline: 0; 
+  	    border:2px solid rgb(0, 112, 255);
+        appearance: none;
+        color: rgb(0, 112, 255) ;
+        border-radius: 6px;
+        position: relative;
+        transition: all 0.25s ease;
+        &:hover{
+            background: rgb(177, 196, 232);
+        }
+    }
+    &__selector option{
+        color: $colorLetraNegra;
+        border-radius:100px ;
+    }
+    a{
+        text-decoration: none;
+    }
+    &__opciones{
+        border-radius: 100px;
+    }
+    &__boton{
+        font-size: 30px;
+        color: $colorLetraBlanca;
+        border: none;
+        background: $colorBoton;
+        padding: 10px 40px; 
+        border-radius: 100px;
+    }
+    &__boton:hover{
+        cursor: pointer;
+        background: $colorBotonHoverConsulta;
+    }
+    &__boton1{
+        font-size: 30px;
+        color: $colorLetraBlanca;
+        border: none;
+        background: $colorBotonHoverConsulta;
+        padding: 10px 40px; 
+        border-radius: 100px;
+    }
+    &__boton1:hover{
+        cursor: pointer;
+        background: $colorBoton;
+    }
+}

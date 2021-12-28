@@ -1,0 +1,393 @@
+.header{
+    display: flex;
+    justify-content: center;
+    height: calc(100vh - 290px);
+        &__fondo{
+            width: 100%;
+        }
+    &__menu{
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        position: absolute;
+        background: $colorMenu;
+        width: 35%;
+        border-radius: 50px;
+    }
+    &__menu ul{
+        padding: 0;
+        display: inline-flex;
+    }
+    &__menu a{
+        color: $colorLetraBlanca;
+        text-decoration: none;
+        display: contents;
+    }
+    &__menu ul li{
+        display:inline-flex;
+        align-items: center;
+        padding: 10px;
+        list-style: none;
+        font-size: 18px;
+        transition: 0.2s;
+    }
+    &__menu ul li:hover{
+        background-color: $colorBotonHoverMenu;
+        border-radius: 10px;
+    }
+    &__imgNav{
+        width: 18px;
+    }
+    &__Contenedor{
+        height: 250px;
+        border-top:solid 5px $colorBotonHoverMenu;
+        background: $colorBackground;
+        box-shadow: inset 0px -10px 20px -20px grey;
+    }
+    &__info{
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+    }
+    &__linea{
+        height: 5px;
+        width: 50%;
+        background-color: $colorBotonHoverMenu;
+    }
+    &__imagenCentral{
+        width: 200px;
+        position: relative;
+        background:$colorLetraGris;
+        border: solid 5px $colorBotonHoverMenu;
+        border-radius: 100px;
+        margin-top: -100px;
+        overflow: hidden;
+            &--tamaño{
+                width: 100%;
+                height: 100%;
+            }
+    }
+    &__texto{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: $colorLetraBlanca;
+        text-align: center;
+        height: 126px;
+        &--color{
+            color: $colorLetraGris;
+        }
+    }
+}
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.contenedorAcercaDe{
+    width: 100%;
+    height: 300px;
+    background: $colorBackground2;
+    &__cajaTexto{
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 20px;
+    }
+    &__text{
+        margin: 20px;
+        text-align: center;
+        margin-top: 50px;
+        text-decoration-line: underline;
+        color: $colorBoton;
+        &--color{
+            text-align: center;
+            line-height: 22px;
+            font-size: 20px;
+            color: $colorLetraBlanca;
+        }
+    }
+}
+.contenedorServicio{
+    margin-top: 20px;
+    background: $colorBackground2;
+    width: 100%;
+    height: 500px;
+    &__mediaQ{
+        display: flex;
+    }
+    &__text{
+        text-align: center;
+        margin-top: 50px;
+        color: $colorLetraNaranja;
+        text-decoration-line: underline;
+    }
+    &__bloque{
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    &__bloque2{
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    &__texto{
+        user-select: none;
+        position: absolute;
+        color: white;
+        text-align: center;
+        text-shadow: 2px 2px 8px black;
+    }
+    &__caja1{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        align-items: center ;
+        position: relative;
+        background: url(../img/soporte.jpg );
+        width: 215px;
+        height:270px;
+        margin: 0 30px 0 0;
+        border-radius: 10px;
+        transition: 0.5s;
+        &::before{
+            backdrop-filter:blur(2px) ;
+            position: absolute;
+            border-radius:10px ;
+            content: '';
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: rgba(255, 0, 0, 0.4);
+        }
+        &:hover{
+            transform: translateY(-20px);
+            transition:all 0.5s;
+        }
+    }
+    &__caja2{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center ;
+        position: relative;
+        background-size:cover;
+        background: url(../img/reparacion.jpg);
+        width: 215px;
+        height: 270px;
+        margin: 0 30px 0 0;
+        border-radius: 10px;
+        transition: 0.5s;
+        &::before{
+            backdrop-filter:blur(2px) ;
+            position: absolute;
+            border-radius:10px ;
+            content: '';
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: rgba(255, 68, 0, 0.4);
+        }
+        &:hover{
+            transform: translateY(-20px);
+            transition:all 0.5s;
+        }
+    }
+    &__caja3{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        align-items: center ;
+        position: relative;
+        background: url(../img/Instalación.jpg);
+        width: 215px;
+        height: 270px;
+        margin: 0 30px 0 0;
+        border-radius: 10px;
+        transition: 0.5s;
+        &::before{
+            backdrop-filter:blur(2px) ;
+            position: absolute;
+            border-radius:10px ;
+            content: '';
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: rgba(255, 255, 0, 0.4);
+        }
+        &:hover{
+            transform: translateY(-20px);
+            transition:all 0.5s;;
+        }
+    }
+    &__caja4{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        align-items: center ;
+        position: relative;
+        background: url(../img/mantenimiento.jpg);
+        width: 215px;
+        height: 270px;
+        margin: 0 30px 0 0;
+        border-radius: 10px;
+        transition: 0.5s;
+        &::before{
+            backdrop-filter:blur(2px) ;
+            position: absolute;
+            border-radius:10px ;
+            content: '';
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: rgba(126, 252, 0, 0.4);
+        }
+        &:hover{
+            transform: translateY(-20px);
+            transition:all 0.5s;
+        }
+    }
+    &__caja5{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        align-items: center ;
+        position: relative;
+        background: url(../img/Configuración.jpg);
+        width: 215px;
+        height: 270px;
+        border-radius: 10px;
+        transition: 0.5s;
+        &::before{
+            backdrop-filter:blur(2px) ;
+            position: absolute;
+            border-radius:10px ;
+            content: '';
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: rgba(0, 119, 255, 0.4);
+        }
+        &:hover{
+            transform: translateY(-20px);
+            transition:all 0.5s;    
+        }
+    }
+    &__caja6{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        align-items: center ;
+        position: relative;
+        background-size:cover;
+        background: url(../img/habitacion.jpeg );
+        background-size:cover;
+        width: 215px;
+        height:270px;
+        border-radius: 10px;
+        transition: 0.5s;
+
+        margin-right: 100px;
+        &::before{
+            backdrop-filter:blur(2px) ;
+            position: absolute;
+            border-radius:10px ;
+            content: '';
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: rgba(255, 0, 0, 0.4);
+        }
+        &:hover{
+            transform: translateY(-20px);
+            transition:all 0.5s;
+        }
+    }
+    &__caja7{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center ;
+        position: relative;
+        background-size:cover;
+        background: url(../img/edificio.jpeg);
+        background-size:cover;
+        background-position-x:center ;
+        width: 215px;
+        height: 270px;
+        border-radius: 10px;
+        transition: 0.5s;
+        margin-right: 100px;
+        &::before{
+            backdrop-filter:blur(2px) ;
+            position: absolute;
+            border-radius:10px ;
+            content: '';
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: rgba(126, 252, 0, 0.4);
+        }
+        &:hover{
+            transform: translateY(-20px);
+            transition:all 0.5s;
+        }
+    }
+    &__caja8{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        align-items: center ;
+        position: relative;
+        background: url(../img/planta.jpeg);
+        background-size:cover;
+        background-repeat:round ;
+        width: 215px;
+        height: 270px;
+        border-radius: 10px;
+        transition: 0.5s;
+        &::before{
+            backdrop-filter:blur(2px) ;
+            position: absolute;
+            border-radius:10px ;
+            content: '';
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: rgba(0, 119, 255, 0.4);
+        }
+        &:hover{
+            transform: translateY(-20px);
+            transition:all 0.5s;;
+        }
+    }
+}
+.contenedorServicio2{
+    height: 500px;
+}
+.subir{
+        font-size: 10px;
+        position: fixed;
+        text-decoration: none;
+        top: 88%;
+        left: 94%;
+        padding: 5px;
+        z-index: 100;
+        border-radius: 100px;
+        transition: 0.2s;
+        background: $colorBoton;
+}
+#flecha{
+    font-size: 50px;
+}
