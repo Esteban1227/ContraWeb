@@ -20,22 +20,25 @@
         <h1 class="contenedorP__texto">
             ¿QUÉ SERVICIO DESEA CONSULTAR?
         </h1>
-        <div class="contenedorP__contenidoSelector">
-            <select name="consulta" id="" class="contenedorP__selector">
-                <option value="">Seleccione una opcion</option>
-                <option value="">Mantenimiento y prestación de servicios de aseo</option>
-                <option value="">Mantenimiento de infraestructura tecnológica</option>
-            </select>
-            <i></i>
+        <div class="contenedorP__block">
+            <div class="contenedorP__contenidoSelector">
+                <select name="consulta" id="select" class="contenedorP__selector" onChange="changePage()">
+                    <option value="zero">Seleccione una opcion</option>
+                    <option value="one">Mantenimiento y prestación de servicios de aseo</option>
+                    <option value="two">Mantenimiento de infraestructura tecnológica</option>
+                </select>
+                <i></i>
+            </div>
+            <div class="contenedorP__botones">
+                <a href="servicioAseo.html" style="display: none;" id="servicio1">
+                    <input class="contenedorP__boton" type="button" value="CLEANING">
+                </a>
+                <a href="infraestructuraTec.html" style="display: none;" id="servicio2">
+                    <input class="contenedorP__boton" type="button" value="SERVICE TIMELY BG">
+                </a>
+            </div>
         </div>
-        <div class="contenedorP__botones">
-            <a href="servicioAseo.html  ">
-                <input class="contenedorP__boton" type="button" value="Servicio 1">
-            </a>
-            <a href="infraestructuraTec.html">
-                <input class="contenedorP__boton1" type="button" value="Servicio 2">
-            </a>
-        </div>
+        <script src="js/selector.js"></script>
     </section>
 </body>
 </html>
