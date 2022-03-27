@@ -125,18 +125,13 @@
   background: #0070ff;
 }
 
-.contenedorP__boton1 {
-  font-size: 30px;
-  color: white;
-  border: none;
-  background: #0070ff;
-  padding: 10px 40px;
-  border-radius: 100px;
+.contenedorP__boton--off {
+  background-color: gray;
+  cursor: none;
 }
 
-.contenedorP__boton1:hover {
-  cursor: pointer;
-  background: #ff3400;
+.contenedorP__boton--off:hover {
+  background-color: gray;
 }
 
 .header {
@@ -827,26 +822,6 @@
 .modal p {
   opacity: 0.7;
   font-size: 14px;
-}
-
-.show2 {
-  pointer-events: auto;
-  opacity: 1;
-}
-
-.show3 {
-  pointer-events: auto;
-  opacity: 1;
-}
-
-.show4 {
-  pointer-events: auto;
-  opacity: 1;
-}
-
-.show5 {
-  pointer-events: auto;
-  opacity: 1;
 }
 
 .footer {

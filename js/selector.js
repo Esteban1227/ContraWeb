@@ -1,23 +1,22 @@
-function changePage(){
-    const selectValue = select.value
-    console.log(selectValue)
+const buttonServicio1 = document.getElementById("servicio1");
+const buttonServicio2 = document.getElementById("servicio2");
+const buttonOff = document.getElementById("buttonSelect");
 
+const changePage = () =>{
+    const selectValue = select.value
     if(selectValue === "one"){
-        const buttonServicio1 = document.getElementById("servicio1");
-        buttonServicio1.style.display = "block";
-        const buttonServicio2 = document.getElementById("servicio2")
         buttonServicio2.style.display ="none"
+        buttonOff.style.display = "none"
+        buttonServicio1.style.display = "block";
     }
-    else if( selectValue === "two"){
-        const buttonServicio1 = document.getElementById("servicio1");
+    else if(selectValue === "two"){
         buttonServicio1.style.display = "none";
-        const buttonServicio2 = document.getElementById("servicio2")
+        buttonOff.style.display = "none"
         buttonServicio2.style.display ="block"
     }
     else{
-        const buttonServicio1 = document.getElementById("servicio1");
         buttonServicio1.style.display = "none";
-        const buttonServicio2 = document.getElementById("servicio2")
         buttonServicio2.style.display ="none"
+        buttonOff.style.display = "block"
     }
 }

@@ -15,11 +15,11 @@ const modal_container2 = document.getElementById('modal_container2');
 const close2 = document.getElementById('close2');
 
 open2.addEventListener('click', () => {
-  modal_container2.classList.add('show2');  
+  modal_container2.classList.add('show');  
 });
 
 close2.addEventListener('click', () => {
-  modal_container2.classList.remove('show2');
+  modal_container2.classList.remove('show');
 });
 
 const open3 = document.getElementById('open3');
@@ -27,11 +27,11 @@ const modal_container3 = document.getElementById('modal_container3');
 const close3 = document.getElementById('close3');
 
 open3.addEventListener('click', () => {
-  modal_container3.classList.add('show3');  
+  modal_container3.classList.add('show');  
 });
 
 close3.addEventListener('click', () => {
-  modal_container3.classList.remove('show3');
+  modal_container3.classList.remove('show');
 });
 
 
@@ -40,11 +40,11 @@ const modal_container4 = document.getElementById('modal_container4');
 const close4 = document.getElementById('close4');
 
 open4.addEventListener('click', () => {
-  modal_container4.classList.add('show4');  
+  modal_container4.classList.add('show');  
 });
 
 close4.addEventListener('click', () => {
-  modal_container4.classList.remove('show4');
+  modal_container4.classList.remove('show');
 });
 
 

@@ -75,21 +75,16 @@
         border: none;
         background: $colorBoton; 
         border-radius: 100px;
-    }
-    &__boton:hover{
-        cursor: pointer;
-        background: $colorBotonHoverConsulta;
-    }
-    &__boton1{
-        font-size: 30px;
-        color: $colorLetraBlanca;
-        border: none;
-        background: $colorBotonHoverConsulta;
-        padding: 10px 40px; 
-        border-radius: 100px;
-    }
-    &__boton1:hover{
-        cursor: pointer;
-        background: $colorBoton;
+        &:hover{
+            cursor: pointer;
+            background: $colorBotonHoverConsulta;
+        }
+        &--off{
+            background-color: gray;
+            &:hover{
+                background-color: gray;
+            }
+            cursor: none;
+        }
     }
 }
